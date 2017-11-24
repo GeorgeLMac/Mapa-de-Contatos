@@ -17,13 +17,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NDTutorialAppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CadastroActivity"/>
+        <activity android:name=".activity.CadastroActivity" android:screenOrientation="portrait"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCPsBHsTurb1JJvI4xbfp6d2V-V8A373pY" />
