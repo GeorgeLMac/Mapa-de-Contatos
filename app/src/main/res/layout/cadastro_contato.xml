@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/foto_contato"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="@string/app_name" />
+
+                </RelativeLayout>
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/tira_foto"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/relative_layout"
+                    android:src="@drawable/ic_camera_enhance_black_24dp"
+                    />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/acessa_galeria"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/relative_layout"
+                    android:layout_alignRight="@id/relative_layout"
+                    android:src="@drawable/ic_folder_black_24dp"
+                    android:layout_alignEnd="@+id/relative_layout"
+                   />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:id="@+id/nome_contato_cadastro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_nome_contato"
+                android:padding="10dp"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefone_contato"
+                />
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/telefone_usuario_cadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                app:mask="#########"
+                android:hint="@string/hint_telefone_cadastro"/>
+
+            <EditText
+                android:id="@+id/email_contato_cadastro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_email_contato"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/site_contato_cadastro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_site_contato"
+                android:inputType="textUri"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/musica_contato_cadastro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_musica_contato"
+                android:inputType="textCapWords"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/video_contato_cadastro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_video_contato"
+                android:inputType="textCapWords"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_endereco_contato"
+                />
+
+            <Button
+                android:id="@+id/endereco_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragmento_favoritos"
+                />
+
+            <CheckBox
+                android:id="@+id/contato_favorito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

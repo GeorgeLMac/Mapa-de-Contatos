@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contatos</string>
+    <string name="fragmento_contatos">Contatos</string>
+    <string name="fragmento_favoritos">Favoritos</string>
+    <string name="hint_nome_contato">Nome do contato</string>
+    <string name="hint_email_contato">E-mail do contato</string>
+    <string name="hint_telefone_cadastro">XXXXXXXXX</string>
+    <string name="hint_site_contato">Site Favorito</string>
+    <string name="hint_endereco_contato">Endereco do contato:</string>
+    <string name="telefone_contato">Número: </string>
+    <string name="hint_foto_contato">Foto:</string>
+    <string name="hint_video_contato">Nome do Video Favorito</string>
+    <string name="hint_musica_contato">Nome da Música Favorita</string>
+    <string name="title_activity_principal">Principal</string>
+</resources>
